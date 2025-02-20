@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -56,9 +58,18 @@ public class Main {
 
         //condicionales if/else
 
+
+        Scanner teclado= new Scanner(System.in);
         double peso=60;
         double estatura=1.70;
         double IMC;
+
+        System.out.println("INGRESE SU PESO");
+        peso = teclado.nextDouble();
+
+        System.out.println("INGRESE ESTATURA");
+        estatura = teclado.nextDouble();
+
 
         IMC= peso /(estatura*estatura);
                 System.out.println("El IMC ES:" + IMC);
